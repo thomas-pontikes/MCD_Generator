@@ -11,11 +11,7 @@
          url('rock.svg#rockwellregular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
 
-@viewport{
-	    zoom: 1.0;
-	    width: device-width;
 }
 
 .home-page{	
@@ -24,12 +20,11 @@ color: black;
 }
 
 body {
+	padding-left:25%;
     background-color: #F7F6F1;
 	width:480px;
 }
-html {
-	width:480px;
-}
+
 .main-content {
     background: url('../images/redb.png')
     no-repeat center;
