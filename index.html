@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<div align="center">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="font/specimen_files/easytabs.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="font/specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" />
+	
+<title>MCD PROMO</title>
+<link rel="stylesheet" href="font/stylesheet.css" type="text/css" charset="utf-8">
+</head>
+<body>
+	<style type="text/css">
+					body{
+				font-family: 'rockwellregular';
+							}
+		</style>
+
+ 
+        <div class="main-content">
+            <div class="text-content">
+             <div class="text-body">Redeem Your Offer</div>
+            </div>
+        </div>
+  
+  <div class="midpage">
+	 <figure>
+	   <img src="images/salad.png" alt="The Pulpit Rock" width="304" height="228">
+	   <br>
+	   <p class="light">Free Chicken Salad with Any Purchase</p>
+	 </figure>
+  </div>
+	
+	<div class="bottomPage">
+		<img src="images/clock.gif" width="40px"height="30px">
+		
+	<div class="timer-text">
+		<h1 div id="timer">2:00 </h1>
+		<h2>Show a crew member<br>before time runs out!</h2>
+	</div>
+	<script type="text/javascript">
+	
+	function countdown(minutes) {
+	    var seconds = 60;
+	    var mins = minutes
+	    function tick() {
+	        var counter = document.getElementById("timer");
+	        var current_minutes = mins-1
+	        seconds--;
+	        counter.innerHTML = 
+	current_minutes.toString() + " : " + (seconds < 10 ? "0" : "") + String(seconds);
+	        if( seconds > 0 ) {
+	            setTimeout(tick, 1000);
+	        } else {
+             
+	            if(mins > 1){
+                 
+	               // countdown(mins-1);   never reach “00″ issue solved:Contributed by Victor Streithorst    
+	               setTimeout(function () { countdown(mins - 1); }, 1000);
+                     
+	            }
+	        }
+	    }
+	    tick();
+	}
+ 
+	countdown(2);
+ 
+	</script>
+	
+	
+
+
+</body>
