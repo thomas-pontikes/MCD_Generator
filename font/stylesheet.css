@@ -28,7 +28,7 @@ body {
     background: url('../images/redb.png')
     no-repeat center;
 	background-position:top;
-	height: 68px;
+	height: 110px;
 }
 
 .midpage{
@@ -41,7 +41,7 @@ body {
 .text-content {
     text-align: center;
     color:#fff;
-    padding-top: 20px;
+    padding-top: 15px;
 	font-size: 36px;
 }
 
