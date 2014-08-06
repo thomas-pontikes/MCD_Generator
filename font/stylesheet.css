@@ -30,6 +30,7 @@ body {
 	no-repeat:center;
 	height:400px;
 	color: #6E6868;
+	font-size:22px;
 }
 
 .text-content {
@@ -57,7 +58,7 @@ body {
 .timer-text {
 	padding-top:15px;
 	color: white;
-	font-size: 65px;
+	font-size: 100px;
 }
 
 h1{
