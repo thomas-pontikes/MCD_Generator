@@ -28,12 +28,12 @@ body {
     background: url('../images/redb.png')
     no-repeat center;
 	background-position:top;
-	height: 110px;
+	height: 155px;
 }
 
 .midpage{
 	no-repeat:center;
-	height:385px;
+	height:375px;
 	color: #6E6868;
 	font-size:22px;
 }
