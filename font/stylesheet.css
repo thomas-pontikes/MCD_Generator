@@ -25,6 +25,7 @@ color: black;
 
 body {
     background-color: #F7F6F1;
+	width:480px;
 }
 
 .main-content {
@@ -32,10 +33,12 @@ body {
     no-repeat center;
 	background-position:top;
 	height: 100px;
+	width: 480px;
 }
 
 .midpage{
 	no-repeat:center;
+	width:480px;
 	height:330px;
 	color: #6E6868;
 	font-size:22px;
@@ -43,6 +46,8 @@ body {
 
 .text-content {
     text-align: center;
+	width:480px;
+	
     color:#fff;
     padding-top: 15px;
 	font-size: 36px;
@@ -51,7 +56,6 @@ body {
 .bottomPage {
 	background: #FFC423;
 	no-repeat: center;
-	padding-top:30px;
 	width: 480px;
 	height: 450px;
 	
