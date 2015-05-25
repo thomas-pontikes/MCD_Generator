@@ -16,7 +16,9 @@
 
 
 .home-page{	
-font-size:30px;
+margin:auto;
+display:inline;
+font-size:25px;
 color: black;
 }
 
