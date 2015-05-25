@@ -14,6 +14,12 @@
 
 }
 
+div.figure {
+	
+	display:inline;
+	
+}
+
 .home-page{	
 font-size:30px;
 color: black;
