@@ -14,11 +14,6 @@
 
 }
 
-div.figure {
-	
-	display:inline;
-	
-}
 
 .home-page{	
 font-size:30px;
@@ -71,6 +66,7 @@ body {
 	no-repeat: center;
 	width: 480px;
 	height: 450px;
+	padding-top:20px;
 	
 }
 
