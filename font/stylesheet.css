@@ -20,7 +20,7 @@ color: black;
 }
 
 body {
-	padding-left:25%;
+	display:inline;
     background-color: #F7F6F1;
 	width:480px;
 }
