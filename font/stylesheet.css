@@ -34,6 +34,16 @@ body {
 }
 
 .midpage{
+	display:none;
+	no-repeat:center;
+	width:480px;
+	height:360px;
+	color: #6E6868;
+	font-size:20px;
+}
+
+.midpagestart{
+	
 	no-repeat:center;
 	width:480px;
 	height:360px;

@@ -25,55 +25,75 @@
             </div>
         </div>
   
-  <div class="midpage">
-	 <figure>
-	   <img src="images/mcchicken.png" width="270" height="210">
-	   <br>
-	   <p class="light">Buy One Get One Free McChicken® Sandwich</p>
-	 </figure>
-  </div>
+    <div class="midpagestart" id="midpagestart">
+  	  <input type="button" value="Start Me" onclick="start();">
+    </br>
+  </br>
+  	  <h2> Read me! </br> </br> Instructions </h2>
+    </br>
+  	  <p>Align the page on your phone.</p>
+    </br>
+  	  <p>When you are ready to show the cashier click "start"</p>
+    </br>
+    	  <p>The timer will countdown from 2:00 immediately after start</p>
+    </div>
+    <div class="midpage" id="midpage">
+  	 <figure>
+  	   <img src="images/mcchicken.png" width="270" height="210">
+   	   <br>
+  	   <p class="light">Free Regualar McFlurry® with Any Purchase</p>
+  	 </figure>
+    </div>
 	
-	<div class="bottomPage">
-		<img src="images/clock.gif" width="40px"height="30px">
+  	<div class="bottomPage">
+  		<img src="images/clock.gif" width="40px"height="30px">
 		
-	<div class="timer-text">
-		<p div id="timer">2:00 <p> </div>
-			<div class="textbottomPage">
-		<p>Show a crew member<br>before time runs out!<P>
-	</div>
-	<script type="text/javascript">
-	setTimeout(function() {
-	function countdown(minutes) {
-	    var seconds = 60;
-	    var mins = minutes
-	    function tick() {
-	        var counter = document.getElementById("timer");
-	        var current_minutes = mins-1
-	        seconds--;
-	        counter.innerHTML = 
-	current_minutes.toString() + " : " + (seconds < 10 ? "0" : "") + String(seconds);
-	        if( seconds > 0 ) {
-	            setTimeout(tick, 1000);
-	        } else {
+  	<div class="timer-text">
+  		<p div id="timer">2:00 <p> </div>
+  			<div class="textbottomPage">
+  		<p>Show a crew member<br>before time runs out!<P>
+  	</div>
+
+  	<script type="text/javascript">
+	
+  	function start(){
+  		document.getElementById('midpage').style.display = 'block';
+  		document.getElementById('midpagestart').style.display = 'none';
+		
+	
+  		countdown(2);
+	
+  	}
+	
+	
+  	function countdown(minutes) {
+  	    var seconds = 60;
+  	    var mins = minutes
+  	    function tick() {
+  	        var counter = document.getElementById("timer");
+  	        var current_minutes = mins-1
+  	        seconds--;
+  	        counter.innerHTML = 
+  	current_minutes.toString() + " : " + (seconds < 10 ? "0" : "") + String(seconds);
+  	        if( seconds > 0 ) {
+  	            setTimeout(tick, 1000);
+  	        } else {
              
-	            if(mins > 1){
+  	            if(mins > 1){
                  
-	               // countdown(mins-1);   never reach “00″ issue solved:Contributed by Victor Streithorst    
-	               setTimeout(function () { countdown(mins - 1); }, 1000);
+  	               // countdown(mins-1);   never reach “00″ issue solved:Contributed by Victor Streithorst    
+  	               setTimeout(function () { countdown(mins - 1); }, 1000);
                      
-	            }
-	        }
-	    }
-	    tick();
-	}
+  	            }
+  	        }
+  	    }
+  	    tick();
+  	} 
  
-	countdown(2);
- }, 5000);
+   </script>
  
-  setTimeout("location.href = 'index.html';",126000);
-	</script>
-	
+
 	
 
-
-</body>
+   </div>
+   </body>

@@ -17,15 +17,25 @@
 				font-family: 'rockwellregular';
 							}
 		</style>
-
  
         <div class="main-content">
             <div class="text-content">
              <p>Redeem Your Offer</p>
             </div>
         </div>
-  
-  <div class="midpage">
+  <div class="midpagestart" id="midpagestart">
+	  <input type="button" value="Start Me" onclick="start();">
+  </br>
+</br>
+	  <h2> Read me! </br> </br> Instructions </h2>
+  </br>
+	  <p>Align the page on your phone.</p>
+  </br>
+	  <p>When you are ready to show the cashier click "start"</p>
+  </br>
+  	  <p>The timer will countdown from 2:00 immediately after start</p>
+  </div>
+  <div class="midpage" id="midpage">
 	 <figure>
 	   <img src="images/largesandwhich.png" width="220" height="185">
 	   <br>
@@ -41,8 +51,19 @@
 			<div class="textbottomPage">
 		<p>Show a crew member<br>before time runs out!<P>
 	</div>
+
 	<script type="text/javascript">
-	setTimeout(function() {
+	
+	function start(){
+		document.getElementById('midpage').style.display = 'block';
+		document.getElementById('midpagestart').style.display = 'none';
+		
+	
+		countdown(2);
+	
+	}
+	
+	
 	function countdown(minutes) {
 	    var seconds = 60;
 	    var mins = minutes
@@ -65,14 +86,10 @@
 	        }
 	    }
 	    tick();
-	}
+	} 
  
-	countdown(2);
- }, 5000);
- 
-  setTimeout("location.href = 'index.html';",126000);
-	</script>
-	
+ </script>
+
 	
 
 </div>
